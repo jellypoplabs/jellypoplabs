@@ -1,0 +1,29 @@
+{
+  "source": "class.mp4",
+  "transcript": "class_scan/transcript.json",
+  "out_dir": "out",
+  "outputs": [
+    {
+      "name": "full_class_edit",
+      "note": "整节课精剪：讲解原速，重复动作加速，等待和调设备删掉",
+      "segments": [
+        {"start": "00:00", "end": "00:05", "action": "cut", "note": "开机等待"},
+        {"start": "00:05", "end": "00:40", "action": "keep", "note": "热身讲解"},
+        {"start": "00:40", "end": "00:50", "action": "cut", "note": "调垫子、喝水"},
+        {"start": "00:50", "end": "01:00", "action": "keep", "note": "示范第一个动作"},
+        {"start": "01:00", "end": "02:00", "action": "speed", "speed": 4, "audio": "mute", "note": "跟练重复 10 次，只留节奏"},
+        {"start": "02:00", "end": "03:00", "action": "keep", "note": "拉伸和总结"}
+      ]
+    },
+    {
+      "name": "hl_01_热身要点",
+      "aspect": "9:16",
+      "crop_x": 0.5,
+      "note": "竖屏切片：一个要点讲清楚",
+      "segments": [
+        {"start": "00:12", "end": "00:30", "action": "keep", "note": "最清楚的一段讲解"},
+        {"start": "01:00", "end": "01:20", "action": "speed", "speed": 2, "audio": "mute", "note": "动作示范"}
+      ]
+    }
+  ]
+}
